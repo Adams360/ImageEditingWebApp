@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Image Editing App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="stage">
+
+            <div class="stage__box">
+
+                <object id="img-src" data="https://picsum.photos/1000?image=874" type="image/png">
+                    <img src="./img.jpeg">
+                </object>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="interface">
+            <div class="text-box">
+                <h1 class="heading"> Interface goes here </h1>
+            </div>
+
+            <div class="controls">
+
+                <div class="controls__group">
+                    <label for="zoom">Zoom</label>
+                    <input id="zoom" class="control slider" type="range" name="zoom" min="0.25" max="1" value="1"
+                        step="0.01" list="ticks">
+                </div>
+
+                <div class="controls__group">
+                    <label for="spacing">Spacing:</label>
+                    <input id="spacing" class="control slider" type="range" name="spacing" min="0" max="100" value="20"
+                        step="1" data-sizing="px">
+                </div>
+
+                <div class="controls__group">
+                    <label for="blur">Blur:</label>
+                    <input id="blur" class="control slider" type="range" name="blur" min="0" max="25" value="0"
+                        data-sizing="px">
+                </div>
+
+                <div class="controls__group">
+                    <label for="opacity">Image Opacity:</label>
+                    <input id="opacity" class="control slider" type="range" name="opacity" min="0" max="1" value="1"
+                        step="0.01">
+                </div>
+
+                <div class="controls__group">
+                    <label for="foreground">Image Color:</label>
+                    <input id="foreground" class="control colorPicker" type="color" name="foreground" value="#16006f">
+                </div>
+
+                <div class="controls__group">
+                    <label for="fg-blend">Image Blend Mode:</label>
+                    <select id="fg-blend" class="control select" name="fg-blend">
+                        <option data-filter="unset">unset</option>
+                        <option data-filter="multiply">multiply</option>
+                        <option data-filter="screen">screen</option>
+                        <option data-filter="overlay">overlay</option>
+                        <option data-filter="darken">darken</option>
+                        <option data-filter="lighten" selected>lighten</option>
+                        <option data-filter="color-dodge">color-dodge</option>
+                        <option data-filter="color-burn">color-burn</option>
+                        <option data-filter="hard-light">hard-light</option>
+                        <option data-filter="soft-light">soft-light</option>
+                        <option data-filter="difference">difference</option>
+                        <option data-filter="exclusion">exclusion</option>
+                        <option data-filter="hue">hue</option>
+                        <option data-filter="saturation">saturation</option>
+                        <option data-filter="color">color</option>
+                        <option data-filter="luminosity">luminosity</option>
+                    </select>
+                </div>
+
+                <div class="controls__group">
+                    <label for="base">Background Color:</label>
+                    <input id="base" class="control colorPicker" type="color" name="base" value="#f7392b">
+                </div>
+
+                <div class="controls__group">
+                    <label for="bg-blend">Background Blend Mode:</label>
+                    <select id="bg-blend" class="control select" name="bg-blend">
+                        <option data-filter="unset">unset</option>
+                        <option data-filter="multiply" selected>multiply</option>
+                        <option data-filter="screen">screen</option>
+                        <option data-filter="overlay">overlay</option>
+                        <option data-filter="darken">darken</option>
+                        <option data-filter="lighten">lighten</option>
+                        <option data-filter="color-dodge">color-dodge</option>
+                        <option data-filter="color-burn">color-burn</option>
+                        <option data-filter="hard-light">hard-light</option>
+                        <option data-filter="soft-light">soft-light</option>
+                        <option data-filter="difference">difference</option>
+                        <option data-filter="exclusion">exclusion</option>
+                        <option data-filter="hue">hue</option>
+                        <option data-filter="saturation">saturation</option>
+                        <option data-filter="color">color</option>
+                        <option data-filter="luminosity">luminosity</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+</body>
+
+</html>

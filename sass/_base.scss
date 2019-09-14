@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    // font-size: 62.5%;
+    height: 100%;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    mix-blend-mode: var(--bg-blend);
+
+}
+

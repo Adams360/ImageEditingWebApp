@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "An image editing app using HTML+CSS + Vanila JS only",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Adam Shaul",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
